@@ -1,10 +1,10 @@
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
 import "./globals.css";
-import { Inter,Roboto } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({subsets:["latin"],weight:["100","300","400","500","700","900"]});
+const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,11 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className+" max-w-full overflow-hidden bg-slate-950 text-gray-200"}>
+      <body className={roboto.className + "  bg-slate-950 text-gray-200 overflow-x-hidden"}>
         <div className="container mx-auto min-h-screen flex flex-col justify-between">
-          <Navbar/>
+          <Navbar />
           {children}
-          <Footer/>
+          <Footer />
         </div>
       </body>
     </html>
