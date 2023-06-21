@@ -5,7 +5,7 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Choose a gallery</h1>
-      <div className="flex">
+      <div className="flex gap-10">
         <Link
           className="border-4 rounded w-72 h-96 relative bg-[url('/illustration.png')] bg-cover"
           href="/portfolio/illustrations"
