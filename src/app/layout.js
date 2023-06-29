@@ -1,5 +1,6 @@
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/navbar/Navbar";
+import { ThemeProvider } from "../context/ThemeContext";
 import "./globals.css";
 import { Inter, Roboto } from "next/font/google";
 
@@ -14,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className + "  bg-slate-950 text-gray-200 overflow-x-hidden"}>
-        <div className="container mx-auto min-h-screen flex flex-col justify-between">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <ThemeProvider>
+          <div className="container mx-auto min-h-screen flex flex-col justify-between">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
