@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import DarkModeToggle from "../darkModeToggle/DarkModeToggle";
 const links = [
   { id: 1, title: "Home", url: "/" },
   { id: 2, title: "Portfolio", url: "/portfolio" },
@@ -13,11 +14,12 @@ export default function Navbar() {
     <div className="flex justify-between py-5">
       <div>Logo</div>
       <div>
-        <ul className="flex gap-2">
+        <div className="flex gap-2">
+        <DarkModeToggle/>
           {links.map((link) => (
-            <li><Link href={link.url}>{link.title}</Link></li>
+            <Link href={link.url}>{link.title}</Link>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );
