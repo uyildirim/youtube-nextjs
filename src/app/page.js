@@ -12,7 +12,7 @@ export default function Home() {
         <Button url="/home" text="See Our Works" />
       </div> 
       <div className='flex-1'>
-        <Image className='w-full h-full object-cover' src={Hero} />
+        <Image className='w-full h-full object-cover' alt='' src={Hero} />
       </div>
     </div>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>

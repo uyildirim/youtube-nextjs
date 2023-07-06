@@ -8,7 +8,7 @@ export default function Contact() {
       <h1 className='text-6xl mb-24 text-center font-semibold'>Let's Keep in Touch</h1>
       <div className='flex gap-5'>
         <div className='flex-1 relative h-[500px]'>
-          <Image src="/contact.png" fill={true} />
+          <Image src="/contact.png" fill={true} alt=''/>
         </div>
         <form className='flex-1 flex flex-col gap-5'>
           <input className='p-5 bg-transparent border' type='text' placeholder='Name' />
